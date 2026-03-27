@@ -1,0 +1,27 @@
+[project]
+name = "rl-arc-agi-3"
+version = "0.1.0"
+description = "Hackathon-ready ARC-AGI-3 starter environment"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "arc-agi==0.9.6",
+    "python-dotenv>=1.0.1,<2",
+]
+
+[project.scripts]
+arc-starter = "rl_arc_agi_3.main:main"
+
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0,<9",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
+testpaths = ["tests"]

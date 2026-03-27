@@ -1,0 +1,10 @@
+{
+  "game_id": "hack1",
+  "title": "Bundled Hackathon Smoke Test",
+  "class_name": "Hack",
+  "tags": [
+    "starter",
+    "offline",
+    "smoke-test"
+  ]
+}
